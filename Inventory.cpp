@@ -4,6 +4,8 @@
 
 using std::string;
 using std::ostream;
+using std::cerr;
+using std::endl;
   
 Inventory::Inventory(string name, float price, int count)
 {
@@ -14,7 +16,10 @@ Inventory::Inventory(string name, float price, int count)
 
 void Inventory::sell()
 {
-  m_in_stock--;
+    if (m_in_stock > 0)
+        m_in_stock--;
+    else
+        cerr << "This item is out of stock!" << endl;
 }
 
 ostream& operator<<(ostream& stream, const Inventory& item)
