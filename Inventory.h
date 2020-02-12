@@ -5,6 +5,11 @@
 using std::string;
 using std::ostream;
 
+/**
+ * This is a helper class in the store.
+ * This class represents one type of item that can be sold in the store.
+ * An item has a name, a price, and the numer of items in stock.
+ */
 class Inventory
 {
   private:
@@ -18,4 +23,6 @@ class Inventory
     friend ostream& operator<<(ostream&, const Inventory&);
 };
 
+
 #endif
+
