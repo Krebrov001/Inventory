@@ -6,3 +6,4 @@ In order to run the code you must do the following:
  * `make`
  * `./a.out`
 
+[![Build Status](https://travis-ci.com/Krebrov001/Inventory.svg?branch=master)](https://travis-ci.com/Krebrov001/Inventory)
